@@ -1,0 +1,24 @@
+Develop a class Histogram for performing histogram calculations (i.e., counting how 
+many values fall in each of a number of intervals). 
+The class should satisfy the following requirements:
+
+    a. A constructor should be provided that takes a single argument specifying a std::vector of doubles 
+    containing the bounds of the histogram bins. The elements of the std::vector must be strictly 
+    monotonically increasing. For example, invoking the constructor with the argument
+
+    std::vector<double>{0.0, 3.14, 20.0, 42.42}
+
+    would create a histogram with three bins, corresponding to the intervals [0, 3.14), [3.14, 20), and [20, 42.42).
+    All data members should be private.
+    
+    b. A member function clear should be provided that clears the histogram statistics.
+
+    c. A member function display should be provided that outputs the contents of the 
+    histogram to a given output stream (i.e., std::ostream) in some human-readable format.
+
+    d. A member function update should be provided that takes a new data value to be added to 
+    the histogram statistics. This function should be able to handle out-of-range data in some appropriate manner.
+
+    e. The class should not be default constructable (i.e., no default constructor should be provided).
+
+    f. The class should provide move and copy constructors, and a destructor.
